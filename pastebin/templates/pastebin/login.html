@@ -1,0 +1,23 @@
+{% extends "pastebin/base.html" %}
+{% block title %} Login {% endblock %}
+{% block body %}
+    <h1>Login</h1>
+    <form action="" method="POST">
+        {% csrf_token %}
+        <div class="row">
+            <div class="col">
+                <input type="text" class="inputCredentials" name="username" placeholder="Username">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <input type="password" class="inputCredentials" name="password" placeholder="Password">
+            </div>
+        </div>
+        <input type="submit" value="Login" class="btn btn-primary"></input>
+    </form>
+    {% for message in messages %}
+        <p>{{ message }}</p>
+    {% endfor %}
+    <p>You don't have an account?<a href="{% url 'register' %}">Register</a></p>
+{% endblock %}

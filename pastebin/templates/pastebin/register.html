@@ -1,0 +1,28 @@
+{% extends "pastebin/base.html" %}
+{% block title %} Register {% endblock %}
+{% block body %}
+    <h3>Register your account</h3>
+    <div class="container text-center">
+        <form action="" method="POST">
+            {% csrf_token %}
+            {% for field in form %}
+                <div class="row">
+                    <div class="col">
+                        {{ field }}
+                    </div>
+                </div>
+            {% endfor %}
+            <input type="submit" name="Create User" value="Register" class="btn btn-primary">
+        </form>
+        <p>{{ form.errors }}</p>
+        <p>Already have an account?<a href="{% url 'login' %}">Login</a></p>
+    </div>
+    <script>
+        let form_fields = document.getElementsByTagName("input");
+        form_fields[1].placeholder = "Username";
+        form_fields[2].placeholder = "Email Address";
+        form_fields[3].placeholder = "Password";
+        form_fields[4].placeholder = "Repeat Password";
+
+    </script>
+{% endblock %}

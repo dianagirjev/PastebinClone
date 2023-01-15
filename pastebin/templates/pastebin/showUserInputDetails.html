@@ -1,0 +1,15 @@
+{% extends 'pastebin/base.html' %}
+{% block title %}
+    UserPostDetails
+{% endblock %}
+{% block body %}
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item">User: {{ userInfo }}</li>
+        <li class="list-group-item">User Email: {{ userInfo.email }}</li>
+        <li class="list-group-item">User Login Date: {{ userInfo.last_login }}</li>
+        <li class="list-group-item">User Input Id: {{ userInput.id }}</li>
+        <li class="list-group-item">User Input Title: {{ userInput.title }}</li>
+        <li class="list-group-item">User Input Text: {{ userInput.text }}</li>
+    </ul>
+    <a href="{% url 'index' %}">Click here to add new paste.</a>
+{% endblock %}

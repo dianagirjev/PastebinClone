@@ -1,0 +1,51 @@
+#container {
+    border: 3px solid black;
+    background-color: rgb(205, 246, 248);
+    border-radius: 30px;
+    margin-top: 2%;
+    padding-bottom: 20px;
+}
+h1, h3 {
+    margin: 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bolder;
+}
+#inputGroupText  .input-group-text, #text, .btn.btn-dark {
+    border: 2px solid black;
+    height: 200px;
+    border-radius: 7px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+#inputGroupTitle  .input-group-text, #title {
+    border: 2px solid black;
+    height: 50px;
+    border-radius: 7px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+}
+.input-group-text {
+    font-weight: bolder;
+}
+.col {
+    margin: 10px;
+}
+.message, p, a {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+input {
+    width: 280px;
+    height: 40px;
+    border: 2px solid black;
+    border-radius: 5px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+}
+.list-group.list-group-flush {
+    margin: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 18px;
+    font-weight: bold;
+}
